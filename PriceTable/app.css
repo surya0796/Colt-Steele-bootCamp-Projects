@@ -1,0 +1,135 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+  background-color: #fa8d62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: rgb(105, 5, 5);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid rgb(160, 124, 90);;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: rgb(245, 240, 240);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #c2c284;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child{
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #d8d9da; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #ffb950;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #fd8a7b;
+  color:rgb(129, 5, 5);
+}
+
+.pricing-button.is-featured {
+  background-color: #f3c4be;
+  color: rgb(85, 15, 6);
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: rgb(61, 6, 6);;;
+  color: #ffb950;
+}
+
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
